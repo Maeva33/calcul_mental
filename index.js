@@ -18,7 +18,7 @@ init()
 function onBtnClick(e) {
     console.log(`J'ai cliqué sur un bouton`)
     if (e.currentTarget.textContent == correctResult) {
-        resultDiv.textContent = "BRAVO !"
+        resultDiv.textContent = "BRAVO !" + "👉"
         refreshDiv.style.display = "block"
     } else {
         resultDiv.textContent = "Essaie encore !"

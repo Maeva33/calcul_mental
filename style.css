@@ -8,6 +8,8 @@
 
 body {
     user-select: none;
+    color: white;
+    text-shadow: grey 1px 1px 2px;
 }
 
 .container {
@@ -18,7 +20,10 @@ body {
     justify-content: center;
     align-items: center;
     transition: background-color 0.5s;
-    background-color: #e3e3e3;
+    background-color:#bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
 }
 
 .title-instructions {
@@ -45,7 +50,7 @@ body {
     font-size: 2rem;
     border-radius: 50%;
     padding: 1rem;
-    border: #233142 solid 4px;
+    border: white solid 4px;
     width: 5rem;
     height: 5rem;
     display: flex;
@@ -58,7 +63,7 @@ body {
 }
 
 .btn {
-    border: 4px black solid;
+    border: 4px white solid;
     padding: 1rem;
     margin: 2rem;
     border-radius: 10px;
@@ -66,15 +71,15 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.5s;
-    color: #e3e3e3;
+    color: white;
 }
 
 .btn-blue {
-    background-color: #233142;
+    background-color: #E178C5;
 }
 
 .btn-yellow {
-    background-color: #455d7a;
+    background-color: #59D5E0;
 }
 
 .btn-red {
@@ -96,7 +101,7 @@ body {
 
 .refresh {
     font-size: 2rem;
-    border: 4px black solid;
+    border: 4px #FAA300 solid;
     padding: 1rem;
     border-radius: 10px;
     display: none;
